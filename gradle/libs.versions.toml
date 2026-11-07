@@ -1,0 +1,18 @@
+[versions]
+agp = "8.8.2"
+kotlin = "2.0.21"
+vehicle = "2.3.2"
+navigation = "3.0.5"
+speech = "3.3.1"
+location = "1.1.3"
+
+[libraries]
+pleos-vehicle = { module = "ai.pleos.playground:Vehicle", version.ref = "vehicle" }
+pleos-navigation = { module = "ai.pleos.playground:NaviHelper", version.ref = "navigation" }
+pleos-tts = { module = "ai.pleos.playground:TextToSpeech", version.ref = "speech" }
+pleos-stt = { module = "ai.pleos.playground:SpeechToText", version.ref = "speech" }
+pleos-location = { module = "ai.pleos.playground:FusedLocation", version.ref = "location" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

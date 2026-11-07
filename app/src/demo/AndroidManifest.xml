@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <activity android:name=".MainActivity">
+            <!-- The driving simulator is not a distraction-optimized application. AAOS must block it while driving. -->
+            <meta-data android:name="distractionOptimized" android:value="false" tools:replace="android:value" />
+        </activity>
+    </application>
+</manifest>
